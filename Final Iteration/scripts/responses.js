@@ -9,14 +9,14 @@ class chatBot {
         },
         {
             id: 2,
-            value: "Do you want some where hot, mild or cold",
+            value: "Do you want somewhere hot, mild or cold?",
             expectedAnswers: ["hot", "cold", "mild"],
             followupQuestion: 3,
             filterOn: "TempRating"
         },
         {
             id: 3,
-            value: "Do you want it to be active or lazy",
+            value: "Do you want it to be an active or lazy holiday?",
             expectedAnswers: ["active", "lazy"],
             filterOn: "Category"
         }
