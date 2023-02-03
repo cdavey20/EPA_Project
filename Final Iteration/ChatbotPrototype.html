@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="Style/PrototypeStyle.css">
+    <title>ChatBot</title>
+</head>
+<body>
+    <!--chatbot messaging display-->
+    <div class="container">
+        <div class="box-header">
+            <div class="title">Let's Chat!</div>
+        </div>
+
+        <div class="box-body" id="chatbox"></div>
+
+        <div class="box-input">
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Type here..." autofocus/>
+            </div>
+            <div class="send">
+                <img src="Style/images/send.png" alt="send" />
+            </div>
+        </div>
+    </div>
+    <!--csv input-->
+    <form id="csvInput">
+        <p style="font-weight: bold;">Please upload dataset first</p>
+        <br />
+        <br />
+        <input type="file" id="csvFile" accept=".csv" />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+<script src="scripts/responses.js"></script>
+</html>

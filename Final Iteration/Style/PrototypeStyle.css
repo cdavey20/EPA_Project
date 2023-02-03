@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*base set styling and variables*/
+* {
+    --light-blue: #AEE7F9;
+    --blue: #4B82F1;
+    --light-orange: #FFB570;
+    --orange: #FD8C1C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*base colouring*/
+body{
+    background: var(--light-blue);
+
+}
+/*configuration of what stores the chat*/
+.container {
+    height: 840px;
+    width: 700px;
+    background: #f2f2f2;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    overflow-wrap: break-word;
+}
+/*configuration of the top bar */
+.box-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 1.5rem;
+}
+/*configuration of the chat history container */
+.box-body {
+    height: 720px;
+    display: flex;
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+/*configuration of the user messaging */
+.box-input {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid var(--light-orange);
+}
+
+.input-sec{
+    flex: 9;
+}
+
+.send{
+    flex:1;
+    padding-right: 4px;
+}
+    .send img{
+        height: 40px;
+        width: 40px;
+    }
+
+#txtInput{
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+}
+/*configuration of the different types of messages */
+.chatbot-message,
+.user-message {
+    padding: 8px;
+    background: var(--light-blue);
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 10px 3px 10px;
+    overflow-wrap: break-word;
+}
+
+.chatbot-message {
+    background: var(--blue);
+    color: #f2f2f2;
+    border-radius: 10px 10px 10px 3px;
+    align-self: flex-start;
+}
